@@ -32,22 +32,27 @@ header.navbar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Added to vertically center navbar items */
+  align-items: center;
   padding: 10px 20px;
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 100vw; /* Changed from 100% to 100vw */
+  width: 100%;
   left: 0;
-  right: 0; /* Added to ensure full width */
   box-sizing: border-box;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links {
-  list-style: none;
+  list-style-type: none; /* Remove dots/bullets */
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
 }
 
 .nav-links li {
