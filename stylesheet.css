@@ -33,14 +33,15 @@ header.navbar {
   
   justify-content: space-between;
   align-items: center; /* Added to vertically center navbar items */
-  padding: 10px 20px;
+  padding: 10px 10px;
   position: fixed;
   top: 0;
   width: 100vw; /* Changed from 100% to 100vw */
   left: 0;
   right: 0; /* Added to ensure full width */
 }
-<!-- -->
+<!-- 
+-->
 
 nav {
   width: 100%;
