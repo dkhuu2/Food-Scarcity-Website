@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
   font-family: Verdana, sans-serif; 
   color: #494949;
   background-color: #f7f7f7; /* Off-white/gray */
@@ -35,17 +37,20 @@ header.navbar {
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 100%; /* Changed from 100% to 100vw */
+  width: 100vw; /* Changed from 100% to 100vw */
   left: 0;
   right: 0; /* Added to ensure full width */
   box-sizing: border-box;
 }
 
+nav {
+  width: 100%;
+}
+
 .nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .nav-links li {
