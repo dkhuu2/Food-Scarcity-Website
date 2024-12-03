@@ -40,7 +40,6 @@ header.navbar {
   width: 100vw; /* Changed from 100% to 100vw */
   left: 0;
   right: 0; /* Added to ensure full width */
-  box-sizing: border-box;
 }
 
 nav {
