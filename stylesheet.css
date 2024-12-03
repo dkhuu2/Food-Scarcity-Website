@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: Verdana, sans-serif; 
   color: #494949;
@@ -12,14 +12,10 @@ body {
 
 h1, h2, h3 {
   font-weight: bold; /* Highlight headings */
-  align-items: center;
-  text-align: center;
 }
 
 p {
   font-weight: lighter; /* Subtle and easy-to-read text */
-  align-items: center;
-  text-align: center;
 }
 
 .logo {
