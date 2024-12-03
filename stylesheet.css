@@ -12,10 +12,14 @@ body {
 
 h1, h2, h3 {
   font-weight: bold; /* Highlight headings */
+  align-items: center;
+  text-align: center;
 }
 
 p {
   font-weight: lighter; /* Subtle and easy-to-read text */
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
@@ -40,7 +44,7 @@ header.navbar {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 1000;
   width: 100%;
