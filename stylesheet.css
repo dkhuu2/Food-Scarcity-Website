@@ -1,14 +1,26 @@
-/* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: Verdana, sans-serif; 
+  color: #494949;
   background-color: #f7f7f7; /* Off-white/gray */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the footer sticks to the bottom */
+}
+
+/* Wrapper for Page Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers all text-based content */
+  padding: 20px;
 }
 
 /* Header Styles */
 header.navbar {
-  background-color: #00bcd4; /* Subtle modern cyan */
+  background-color: #0ba78d; /* Subtle modern cyan */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
@@ -33,11 +45,11 @@ header.navbar {
 .nav-links a {
   text-decoration: none;
   color: white; /* Cyan text contrast */
-  font-weight: bold;
+  font-weight: 600; /* Semi-bold for emphasis */
 }
 
 .nav-links a:hover {
-  color: #e0f7fa; /* Lighter cyan hover effect */
+  color: #caf3e3; /* Lighter cyan hover effect */
 }
 
 /* Carousel Styles */
@@ -70,7 +82,7 @@ header.navbar {
 }
 
 .carousel-controls button {
-  background-color: #00bcd4; /* Cyan buttons */
+  background-color: #0ba78d; /* Cyan buttons */
   border: none;
   padding: 10px 20px;
   margin: 0 5px;
@@ -81,7 +93,7 @@ header.navbar {
 }
 
 .carousel-controls button:hover {
-  background-color: #008c9e; /* Darker cyan for hover */
+  background-color: #caf3e3; 
 }
 
 /* Sections */
@@ -96,13 +108,10 @@ section {
 
 /* Footer Styles */
 footer {
-  background-color: #00bcd4; /* Cyan footer */
+  background-color: #0ba78d; /* Cyan footer */
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
