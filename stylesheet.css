@@ -38,7 +38,6 @@ header.navbar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -80,7 +79,6 @@ header.navbar {
   border-radius: 10px;
   background-color: white; /* Clean white for contrast */
   align-items: center;
-  text-align: center; /* Centers all text-based content */
 }
 
 .carousel {
