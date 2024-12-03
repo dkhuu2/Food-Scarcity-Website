@@ -3,11 +3,12 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #fff;
+  background-color: #f7f7f7; /* Off-white/gray */
 }
 
+/* Header Styles */
 header.navbar {
-  background-color: #fffbe0; /* Pastel yellow */
+  background-color: #00bcd4; /* Subtle modern cyan */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
@@ -31,12 +32,12 @@ header.navbar {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: white; /* Cyan text contrast */
   font-weight: bold;
 }
 
 .nav-links a:hover {
-  color: #888;
+  color: #e0f7fa; /* Lighter cyan hover effect */
 }
 
 /* Carousel Styles */
@@ -46,6 +47,7 @@ header.navbar {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
   border-radius: 10px;
+  background-color: white; /* Clean white for contrast */
 }
 
 .carousel {
@@ -68,16 +70,18 @@ header.navbar {
 }
 
 .carousel-controls button {
-  background-color: #fffbe0;
-  border: 1px solid #ddd;
+  background-color: #00bcd4; /* Cyan buttons */
+  border: none;
   padding: 10px 20px;
   margin: 0 5px;
   border-radius: 5px;
   cursor: pointer;
+  color: white;
+  font-weight: bold;
 }
 
 .carousel-controls button:hover {
-  background-color: #ffefa0;
+  background-color: #008c9e; /* Darker cyan for hover */
 }
 
 /* Sections */
@@ -87,5 +91,46 @@ section {
   max-width: 800px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #f7f7f7; /* Off-white/gray for subtle background */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #00bcd4; /* Cyan footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Carousel Responsiveness */
+@media (max-width: 600px) {
+  .carousel-container {
+    padding: 10px;
+  }
+
+  .carousel-controls button {
+    padding: 5px 10px;
+  }
+
+  header.navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
 }
