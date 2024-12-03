@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   margin: 0;
   font-family: Verdana, sans-serif; 
@@ -6,6 +7,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures the footer sticks to the bottom */
+}
+
+h1, h2, h3 {
+  font-weight: bold; /* Highlight headings */
+}
+
+p {
+  font-weight: lighter; /* Subtle and easy-to-read text */
 }
 
 /* Wrapper for Page Content */
@@ -20,7 +29,7 @@ body {
 
 /* Header Styles */
 header.navbar {
-  background-color: #0ba78d; /* Subtle modern cyan */
+  background: linear-gradient(to right, #0ba78d, #008c9e); /* Subtle cyan gradient */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
@@ -50,6 +59,11 @@ header.navbar {
 
 .nav-links a:hover {
   color: #caf3e3; /* Lighter cyan hover effect */
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid white; /* Highlight active link */
+  color: #caf3e3; /* Lighter cyan */
 }
 
 /* Carousel Styles */
@@ -82,7 +96,7 @@ header.navbar {
 }
 
 .carousel-controls button {
-  background-color: #0ba78d; /* Cyan buttons */
+  background: linear-gradient(to right, #0ba78d, #008c9e); /* Cyan gradient for buttons */
   border: none;
   padding: 10px 20px;
   margin: 0 5px;
@@ -118,6 +132,16 @@ footer {
 footer p {
   margin: 0;
   font-size: 0.9em;
+}
+
+footer a {
+  color: white; /* Default link color in the footer */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #caf3e3; /* Lighter cyan for hover */
+  text-decoration: underline; /* Optional for emphasis */
 }
 
 /* Carousel Responsiveness */
