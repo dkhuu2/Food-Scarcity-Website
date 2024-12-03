@@ -1,12 +1,14 @@
 /* General Styles */
 body {
-  margin: 0;
+  margin: auto;
   font-family: Verdana, sans-serif; 
   color: #494949;
   background-color: #f7f7f7; /* Off-white/gray */
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures the footer sticks to the bottom */
+  align-items: center;
+  text-align: center; 
 }
 
 h1, h2, h3 {
@@ -18,9 +20,8 @@ p {
 }
 
 .logo {
-  display: block;
-  margin: 0 auto 20px;
   color: white;
+  margin-right: 20px; 
 }
 
 /* Wrapper for Page Content */
@@ -60,7 +61,7 @@ header.navbar {
 .nav-links a {
   text-decoration: none;
   color: white; /* Cyan text contrast */
-  font-weight: 600; /* Semi-bold for emphasis */
+  font-weight: 400; /* Semi-bold for emphasis */
 }
 
 .nav-links a:hover {
@@ -80,6 +81,8 @@ header.navbar {
   margin: 20px;
   border-radius: 10px;
   background-color: white; /* Clean white for contrast */
+  align-items: center;
+  text-align: center; /* Centers all text-based content */
 }
 
 .carousel {
@@ -88,13 +91,9 @@ header.navbar {
 }
 
 .carousel-item {
-  margin: auto;
-  width: 55.57vw;
-  height: 60vh;
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  animation: fadeIn 1s ease-in forwards;
+  display: none;
+  text-align: center;
+  padding: 20px;
 }
 
 .carousel-item.active {
@@ -107,23 +106,16 @@ header.navbar {
 
 .carousel-controls button {
   background: linear-gradient(to right, #0ba78d, #008c9e); /* Cyan gradient for buttons */
-  position: absolute;
-  z-index: 2;
   border: none;
-  font-size: 4rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: color 0.3s ease, background-color 0.3s ease;
+  color: white;
+  font-weight: bold;
 }
 
-.carousel-button:hover,
-.carousel-button:focus {
-  color: white;
+.carousel-controls button:hover {
   background-color: #caf3e3; 
 }
 
