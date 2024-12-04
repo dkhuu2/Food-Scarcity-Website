@@ -314,20 +314,20 @@ section {
 
 .button {
   position: fixed;
-  bottom: 80px; /* Positioned above the footer */
+  bottom: 30px; /* Adjust distance from bottom as needed */
   right: 30px;
   background: linear-gradient(to right, #0ba78d, #008c9e);
   color: white;
   border: none;
-  border-radius: 50px; /* Rounded corners for a modern look */
+  border-radius: 50px;
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 1000; /* Ensure it's above other elements */
-  text-decoration: none; /* Remove underline from link */
-  display: inline-block; /* Allows padding and dimensions */
+  z-index: 1000;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .button:hover {
