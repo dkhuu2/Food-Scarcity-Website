@@ -28,4 +28,39 @@
     <p>© 2024 Food Scarcity in Nebraska. All rights reserved.</p>
   </footer>
 </body>
+
+<section class="gallery">
+  <div class="gallery-item">
+    <img src="~pictures/pic1.png" alt="Definition of Food Scarcity">
+    <div class="caption">Definition of Food Scarcity</div>
+  </div>
+  <div class="gallery-item">
+    <img src="~pictures/pic2.png" alt="Map of Food Scarcity in Nebraska">
+    <div class="caption">Map of Food Scarcity in Nebraska</div>
+  </div>
+  <div class="gallery-item">
+    <img src="~pictures/pic3.png" alt="How we define Food Scarcity">
+    <div class="caption">How we define Food Scarcity</div>
+  </div>
+  <!-- Add more gallery items as needed -->
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    const fadeInOnScroll = () => {
+      const windowBottom = window.innerHeight + window.scrollY;
+      galleryItems.forEach(item => {
+        const itemTop = item.offsetTop;
+        if (windowBottom > itemTop + 50) { // Trigger a little earlier than the element
+          item.classList.add("show");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", fadeInOnScroll);
+    fadeInOnScroll(); // Initial check in case items are already visible
+  });
+</script>
 </html>
