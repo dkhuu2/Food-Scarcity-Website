@@ -24,7 +24,6 @@ p {
 .logo {
   color: white;
   margin-right: 20px; 
-  font-weight: bold;
 }
 
 /* Header Styles */
@@ -41,6 +40,7 @@ header.navbar {
   width: 100%;
   left: 0;
   box-sizing: border-box;
+  font-weight: bold;
 }
 
 nav {
@@ -49,7 +49,7 @@ nav {
 }
 
 .nav-links {
-  list-style-type: none; /* Remove dots/bullets */
+  list-style-type: none; 
   margin: 0;
   padding: 0;
   display: flex;
@@ -315,7 +315,7 @@ section {
 
 .button {
   position: fixed;
-  bottom: 50px; /* Adjust distance from bottom as needed */
+  bottom: 80px; /* Adjust distance from bottom as needed */
   right: 40px;
   background: linear-gradient(to right, #0ba78d, #008c9e);
   color: white;
