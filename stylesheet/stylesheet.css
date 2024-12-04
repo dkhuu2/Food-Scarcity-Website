@@ -118,6 +118,9 @@ footer a:hover {
   margin: 0 auto;
   text-align: center;
   padding: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .carousel {
@@ -128,13 +131,25 @@ footer a:hover {
   max-height: 500px;
 }
 
+.carousel-container.carousel-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .carousel-item {
   display: none;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
 }
 
 .carousel-item.active {
   display: block;
+  opacity: 1;
+}
+
+.carousel-item-hidden {
+  opacity: 0;
 }
 
 .carousel-item img {
@@ -300,7 +315,7 @@ section {
 .button {
   position: fixed;
   bottom: 80px; /* Positioned above the footer */
-  right: 20px;
+  right: 30px;
   background: linear-gradient(to right, #0ba78d, #008c9e);
   color: white;
   border: none;
