@@ -315,7 +315,7 @@ section {
 
 .button {
   position: fixed;
-  bottom: 80px; /* Adjust distance from bottom as needed */
+  bottom: 70px; /* Adjust distance from bottom as needed */
   right: 40px;
   background: linear-gradient(to right, #0ba78d, #008c9e);
   color: white;
