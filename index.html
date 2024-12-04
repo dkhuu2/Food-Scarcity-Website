@@ -12,11 +12,11 @@
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Introduction</a></li>
-        <li><a href="homeIndex.html">Home</a></li>
+        <li><a href="homepage/homeIndex.html">Home</a></li>
         <li><a href="calculatorpage/calculatorIndex.html">Calculator</a></li>
         <li><a href="aboutpage/aboutIndex.html">About Us</a></li>
-        <li><a href="contactIndex.html">Contact</a></li>
-        <li><a href="sourceIndex.html">Sources</a></li>
+        <li><a href="contactpage/contactIndex.html">Contact</a></li>
+        <li><a href="sourcepage/sourceIndex.html">Sources</a></li>
       </ul>
     </nav>
   </header>
@@ -27,21 +27,21 @@
   <section class="gallery">
     <section class="gallery">
       <div class="gallery-item">
-        <a href="introduction-details.html">
+        <a href="introsubsection/definition.html">
           <img src="pictures/pic1.png" alt="Definition of Food Scarcity">
           <div class="caption">Definition of Food Scarcity</div>
         </a>
       </div>
       <div class="gallery-item">
-        <a href="nebraska-map.html">
+        <a href="introsubsection/map.html">
           <img src="pictures/pic2.png" alt="Map of Food Scarcity in Nebraska">
           <div class="caption">Map of Food Scarcity in Nebraska</div>
         </a>
       </div>
       <div class="gallery-item">
-        <a href="scarcity-definition.html">
-          <img src="pictures/pic3.png" alt="How we define Food Scarcity">
-          <div class="caption">How we define Food Scarcity</div>
+        <a href="introsubsection/impact.html">
+          <img src="pictures/pic3.png" alt="Impacts of Food Scarcity">
+          <div class="caption">Impacts of Food Scarcity</div>
         </a>
       </div>
     </section>
@@ -52,22 +52,5 @@
   </footer>
 </body>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const galleryItems = document.querySelectorAll(".gallery-item");
-
-    const fadeInOnScroll = () => {
-      const windowBottom = window.innerHeight + window.scrollY;
-      galleryItems.forEach(item => {
-        const itemTop = item.offsetTop;
-        if (windowBottom > itemTop + 50) { // Trigger a little earlier than the element
-          item.classList.add("show");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", fadeInOnScroll);
-    fadeInOnScroll(); // Initial check in case items are already visible
-  });
-</script>
+<script src="introsubsection/galleryScript.js"></script>
 </html>

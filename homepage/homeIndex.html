@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>Home</title>
   <link rel="stylesheet" href="../stylesheet/stylesheet.css">
 </head>
 <body>
@@ -21,10 +21,33 @@
     </nav>
   </header>
 
-  <h1 class="main-content">About Us</h1>
-  <p class="main-content">Insert info Here</p>
+  <main>
+    <section id="home" class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item active">
+          <h2>Welcome to the Home Page!</h2>
+          <p>Fact 1: This is a carousel item.</p>
+        </div>
+        <div class="carousel-item">
+          <h2>Picture 2</h2>
+          <p>Fact 2: Learn something new today!</p>
+        </div>
+        <div class="carousel-item">
+          <h2>Picture 3</h2>
+          <p>Fact 3: Keep exploring our website.</p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2024 Food Scarcity in Nebraska. All rights reserved.</p>
   </footer>
 </body>
+
+<script src="homeScript.js"></script>
+</html>

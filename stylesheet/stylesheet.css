@@ -9,8 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures footer sticks to bottom */
-  padding-top: 60px; /* Prevent header overlap */
-  padding-bottom: 40px; /* Prevent footer overlap */
+  padding-top: 80px; /* Prevent header overlap */
+  padding-bottom: 60px; /* Prevent footer overlap */
 }
 
 h1, h2, h3 {
@@ -227,6 +227,13 @@ section {
   background-color: white; /* Clean white for contrast */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 95%; 
+  max-width: 1600px; 
+  min-height: 70vh; 
+  margin: 20px auto; 
+  padding: 30px; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px;
 }
 
 .gallery-item {
@@ -235,11 +242,16 @@ section {
   opacity: 0; /* Start hidden for fade-in effect */
   transform: translateY(20px); /* Start slightly off-screen */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 300px;
+  flex-grow: 1;
   border-radius: 10px;
   object-fit: cover;
   display: block;
@@ -283,4 +295,28 @@ section {
 
 .gallery-item a:hover .caption {
   background: rgba(0, 0, 0, 0.7); /* Optional: slight darkening of caption */
+}
+
+.button {
+  position: fixed;
+  bottom: 80px; /* Positioned above the footer */
+  right: 20px;
+  background: linear-gradient(to right, #0ba78d, #008c9e);
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded corners for a modern look */
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000; /* Ensure it's above other elements */
+  text-decoration: none; /* Remove underline from link */
+  display: inline-block; /* Allows padding and dimensions */
+}
+
+.button:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #0ba78d, #0ba78d); /* Slight color change on hover */
 }
