@@ -110,6 +110,7 @@ footer a:hover {
 
 /* Carousel Styles */
 .carousel-container {
+  position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   background-color: white; /* Clean white for contrast */
   width: 100%;
@@ -144,24 +145,24 @@ footer a:hover {
 
 .carousel-controls {
   position: absolute;
-  top: 50%; /* Center the buttons vertically */
+  top: 50%; 
   width: 100%;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%); /* Adjust for perfect centering */
-  pointer-events: none; /* Allows clicks only on buttons */
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10; /* Ensure buttons are above the carousel items */
 }
 
 .carousel-controls button {
-  background: linear-gradient(to right, #0ba78d, #008c9e); /* Cyan gradient for buttons */
+  background: linear-gradient(to right, #0ba78d, #008c9e);
   border: none;
-  padding: 10px 20px;
-  margin: 0;
-  border-radius: 50%; /* Circle buttons */
+  padding: 10px 15px;
+  border-radius: 50%;
   cursor: pointer;
   color: white;
   font-weight: bold;
-  pointer-events: all; /* Make buttons clickable */
+  pointer-events: all;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
