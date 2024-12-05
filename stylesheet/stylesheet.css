@@ -105,7 +105,6 @@ footer a:hover {
 
 /* Wrapper for Page Content */
 .main-content {
-  overflow-y: auto;
   max-width: 800px; 
   margin: 0 auto;    
   text-align: center;
@@ -263,6 +262,7 @@ section {
   height: 350px;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 }
 
 .gallery-item img {
