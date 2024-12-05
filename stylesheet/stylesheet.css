@@ -10,7 +10,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures footer sticks to bottom */
-  position: relative;
   padding-top: 80px; /* Prevent header overlap */
   padding-bottom: 60px; /* Prevent footer overlap */
 }
