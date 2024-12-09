@@ -286,7 +286,7 @@ section {
   max-height: 400px;
   object-position: center;
   display: block;
-  margin: auto; 
+  margin: 0; 
   border-radius: 10px; 
   transition: transform 0.3s ease; 
 }
