@@ -267,7 +267,6 @@ section {
   transform: translateY(20px); /* Start slightly off-screen */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   height: auto;
-  min-height: 300px;
   max-height: 400px;
   display: flex;
   flex-direction: column;
@@ -286,7 +285,7 @@ section {
   max-height: 400px;
   object-position: center;
   display: block;
-  margin: auto; 
+  margin: 0; 
   border-radius: 10px; 
   transition: transform 0.3s ease; 
 }
