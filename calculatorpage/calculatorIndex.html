@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Calculator</title>
-    <link rel="stylesheet" href="../stylesheet/stylesheet.css">
-  </head>
-  <body>
-    <header class="navbar">
-      <div class="logo">Food Scarcity in Nebraska</div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="../index.html">Introduction</a></li>
-          <li><a href="../homepage/homeIndex.html">Home</a></li>
-          <li><a href="../calculatorpage/calculatorIndex.html">Calculator</a></li>
-          <li><a href="../aboutpage/aboutIndex.html">About Us</a></li>
-          <li><a href="../contactpage/contactIndex.html">Contact</a></li>
-          <li><a href="../sourcepage/sourceIndex.html">Sources</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="../stylesheet/calculator.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Food Scarcity in Nebraska</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="../index.html">Introduction</a></li>
+        <li><a href="../homepage/homeIndex.html">Home</a></li>
+        <li><a href="../calculatorpage/calculatorIndex.html">Calculator</a></li>
+        <li><a href="../aboutpage/aboutIndex.html">About Us</a></li>
+        <li><a href="../contactpage/contactIndex.html">Contact</a></li>
+        <li><a href="../sourcepage/sourceIndex.html">Sources</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1 class="main-content">Calculator Page</h1>
-    <p class="main-content">Content about the calculator will go here.</p>
-    
+  <section class="calculator-container">
+    <h1>Food Waste Calculator</h1>
+    <form id="wasteCalculator">
+      <div class="question">
+        <label>How many people are in your household?</label>
+        <input type="number" id="householdSize" min="1" value="1" required>
+      </div>
 
-    <a href="../aboutpage/aboutIndex.html" class="button">Our Purpose</a>
+      <div class="question">
+        <label>How much do you spend on groceries monthly? ($)</label>
+        <input type="number" id="grocerySpending" min="0" required>
+      </div>
 
-    <footer>
-      <p>© 2024 Food Scarcity in Nebraska. All rights reserved.</p>
-    </footer>
-  </body>
-</html>
+      <div class="question">
+        <label>What percentage of your food do you estimate goes to waste?</label>
+        <input type="range" id="wastePercentage" min="0" max="50" value="10">
+        <span id="wasteDisplay">10%</span>
+      </div>
+
+      <button type="button" onclick="calculateWaste()">Calculate Waste</button>
+    </form>
+    <div id="result" class="result"></div>
+  </section>
+
+  <a href="../aboutpage/aboutIndex.html" class="button">Our Purpose</a>
+</main>
+
+  <footer>
+    <p>© 2024 Food Scarcity in Nebraska. All rights reserved.</p>
+  </footer>
+
+  <script src="calculatorScript.js"></script>
+</body>
