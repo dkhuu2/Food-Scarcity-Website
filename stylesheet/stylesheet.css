@@ -266,7 +266,8 @@ section {
   opacity: 0; /* Start hidden for fade-in effect */
   transform: translateY(20px); /* Start slightly off-screen */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  height: 500px;
+  height: auto;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   z-index: 1000;
@@ -277,14 +278,14 @@ section {
 .gallery-item img {
   width: 100%; 
   height: auto; 
-  object-fit: contain;
+  object-fit: cover;
   max-width: 100%;
+  max-height: 500px;
   display: block;
   margin: auto; 
   border-radius: 10px; 
   transition: transform 0.3s ease; 
 }
-
 
 .gallery-item img:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
