@@ -322,6 +322,42 @@ section {
   background: rgba(0, 0, 0, 0.7); /* Optional: slight darkening of caption */
 }
 
+.gallery-subitem {
+  position: relative;
+  overflow: hidden;
+  opacity: 0; /* Start hidden for fade-in effect */
+  transform: translateY(20px); /* Start slightly off-screen */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.gallery-subitem img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  flex-grow: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Fade-in Activation */
+.gallery-subitem.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-subitem a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
 .button {
   position: fixed;
   bottom: 60px; /* Adjust distance from bottom as needed */
@@ -346,6 +382,7 @@ section {
   background: linear-gradient(to right, #0ba78d, #0ba78d); /* Slight color change on hover */
 }
 
+/* Calculator-Specific Styles */
 .calculator-container {
   max-width: 600px;
   margin: 20px auto;
@@ -354,6 +391,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  font-family: Verdana, sans-serif; /* Explicitly set the font */
 }
 
 .calculator-container h1 {
@@ -397,41 +435,6 @@ section {
 .calculator-container input[type="range"]:focus {
   border-color: #0ba78d;
   box-shadow: 0 0 5px rgba(11, 167, 141, 0.5);
-}
-
-.calculator-container input[type="range"] {
-  -webkit-appearance: none;
-  background: linear-gradient(to right, #0ba78d, #008c9e);
-  height: 5px;
-  border-radius: 5px;
-  outline: none;
-  margin-top: 10px;
-}
-
-.calculator-container input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #008c9e;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.calculator-container input[type="range"]::-moz-range-thumb {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #008c9e;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.calculator-container #wasteDisplay {
-  font-size: 1em;
-  color: #494949;
-  margin-top: 5px;
 }
 
 .calculator-container button {
