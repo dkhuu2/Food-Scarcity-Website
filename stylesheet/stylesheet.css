@@ -323,16 +323,13 @@ section {
 }
 
 /* Disable zoom effect for specific images */
+.gallery-item img:hover {
+  transform: none; /* Disable zoom effect */
+}
+
 .gallery-item.no-zoom img {
-  transition: none; /* Remove the zoom transition */
-}
-
-.gallery-item.no-zoom img:hover {
-  transform: none; /* Disable zoom on hover */
-}
-
-.gallery-item.no-zoom .caption {
-  display: none; /* Optionally hide the caption */
+  transform: none; /* Explicitly ensure no zoom for specific images */
+  transition: none; /* Remove transition as well */
 }
 
 .button {
@@ -361,14 +358,15 @@ section {
 
 /* Calculator-Specific Styles */
 .calculator-container {
-  max-width: 600px;
+  max-width: 90%; /* Adjusted from 600px to percentage */
   margin: 20px auto;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-family: Verdana, sans-serif; /* Explicitly set the font */
+  font-family: Verdana, sans-serif;
+  overflow: auto; /* Prevent content cutoff */
 }
 
 .calculator-container h1 {
@@ -446,7 +444,8 @@ section {
 /* Responsiveness for Calculator */
 @media (max-width: 600px) {
   .calculator-container {
-    padding: 15px;
+    padding: 10px; 
+    margin: 0 5px;
   }
 
   .calculator-container input[type="number"],
