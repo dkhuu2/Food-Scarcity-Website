@@ -363,12 +363,12 @@ section {
 
 /* Calculator-Specific Styles */
 .calculator-container {
-  max-width: 90%; /* Adjusted from 600px to percentage */
+  max-width: 100%; /* Adjusted from 600px to percentage */
   margin: 20px auto;
   padding: 20px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(42, 37, 37, 0.1);
   text-align: center;
   font-family: Verdana, sans-serif;
   overflow: auto; /* Prevent content cutoff */

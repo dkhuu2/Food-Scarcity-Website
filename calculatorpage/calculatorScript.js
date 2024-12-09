@@ -10,7 +10,7 @@ function calculateWaste() {
   const leftoversWaste = Number(document.getElementById("leftoversWaste").value);
   const expiredFood = Number(document.getElementById("expiredFood").value);
   const unusedPurchases = Number(document.getElementById("unusedPurchases").value);
-  const discardUglyProduce = document.getElementById("discardUglyProduce").checked;
+  const discardUglyProduce = document.getElementById("discardUglyProduce").value;
 
   // Validate inputs
   if (
@@ -39,8 +39,13 @@ function calculateWaste() {
   const yearlyExpiredFood = expiredFood * 12; // Monthly to annual
   const yearlyUnusedPurchases = unusedPurchases * 12; // Monthly to annual
 
-  // Adding waste from "ugly" produce discard (assuming 10% waste)
-  const uglyProduceWaste = discardUglyProduce ? (averageWastePerPerson * householdSize * 0.1) : 0;
+  // Adjust waste for "ugly" produce based on the selected frequency
+  let uglyProduceWaste = 0;
+  if (discardUglyProduce === "often") {
+    uglyProduceWaste = averageWastePerPerson * householdSize * 0.2; // 20% waste
+  } else if (discardUglyProduce === "sometimes") {
+    uglyProduceWaste = averageWastePerPerson * householdSize * 0.1; // 10% waste
+  }
 
   // Total waste calculation
   const totalWastePounds = wastedFoodPounds + yearlyLeftoversWaste + yearlyExpiredFood + yearlyUnusedPurchases + uglyProduceWaste;
