@@ -273,16 +273,16 @@ section {
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  flex-grow: 1;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 100%; 
+  height: auto; 
+  object-fit: contain;
+  max-width: 100%;
   display: block;
-  transition: transform 0.3s ease;
-  margin: auto;
+  margin: auto; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease; 
 }
+
 
 .gallery-item img:hover {
   transform: scale(1.05); /* Slight zoom effect on hover */
