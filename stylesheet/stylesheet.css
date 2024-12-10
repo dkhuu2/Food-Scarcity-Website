@@ -247,6 +247,10 @@ section {
 }
 
 .section-contrast {
+  width: 90%;
+  max-width: 1200px; /* Increase from 100% to 800px for a wider box */
+  margin: 20px auto;
+  padding: 40px; /* Increase padding for more spacing */
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -431,12 +435,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .calculator-container .question {
   margin-bottom: 15px;
   width: 100%;
   text-align: left;
+  max-width: 600px;
 }
 
 .calculator-container label {
