@@ -172,19 +172,22 @@ footer a:hover {
 
 .carousel-caption {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 20px;
+  left: 20px;
+  right: auto;
+  width: auto;
+  max-width: 70%;
   background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
   color: white;
-  padding: 20px;
-  text-align: center;
+  padding: 15px;
+  text-align: left;
+  border-radius: 8px;
   z-index: 10;
 }
 
 .carousel-caption h2 {
   margin: 0 0 10px 0;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
