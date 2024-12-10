@@ -363,15 +363,16 @@ section {
 
 /* Calculator-Specific Styles */
 .calculator-container {
-  max-width: 100%; /* Adjusted from 600px to percentage */
+  max-width: 800px; /* Increase from 100% to 800px for a wider box */
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px; /* Increase padding for more spacing */
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(42, 37, 37, 0.1);
   text-align: center;
   font-family: Verdana, sans-serif;
   overflow: auto; /* Prevent content cutoff */
+  height: auto; /* Allow height to grow naturally with content */
 }
 
 .calculator-container h1 {
@@ -402,7 +403,7 @@ section {
 .calculator-container input[type="number"],
 .calculator-container input[type="range"] {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Increase padding for larger inputs */
   margin-top: 5px;
   font-size: 1em;
   border: 1px solid #ccc;
@@ -421,7 +422,7 @@ section {
   background: linear-gradient(to right, #0ba78d, #008c9e);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Increase padding for a more balanced button */
   border-radius: 25px;
   cursor: pointer;
   font-size: 1em;
