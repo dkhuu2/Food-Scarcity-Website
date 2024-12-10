@@ -56,6 +56,7 @@ function calculateWaste() {
   resultDiv.style.display = "block";
   resultDiv.innerHTML = `
     <h3>Results</h3>
+    <p>According to Ryan Cooper, Vice President of Circular Economy Solutions at Rubicon,</p>
     <p>Your household wastes approximately <strong>${totalWastePounds.toFixed(2)} pounds</strong> of food annually.</p>
     <p>This amounts to about <strong>$${totalWasteCost.toFixed(2)}</strong> worth of groceries each year.</p>
     <p>Consider planning meals better, using leftovers, reducing food waste by not over-purchasing, and buying only what you need!</p>

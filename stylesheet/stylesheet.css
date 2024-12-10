@@ -47,6 +47,7 @@ header.navbar {
 nav {
   display: flex;
   align-items: center;
+  z-index: 1001;
 }
 
 .nav-links {
@@ -86,6 +87,7 @@ footer {
   bottom: 0;
   width: 100vw;
   left: 0;
+  z-index: 1001;
 }
 
 footer p {
@@ -139,10 +141,13 @@ footer a:hover {
 }
 
 .carousel-item {
+  position: relative;
   display: none;
   text-align: center;
   opacity: 0;
   transition: opacity 0.6s ease-out;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item.active {
@@ -155,14 +160,38 @@ footer a:hover {
 }
 
 .carousel-item img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-caption h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  margin: 0;
+  font-size: 1em;
+  opacity: 0.9;
 }
 
 .carousel-controls {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -206,7 +235,7 @@ section {
   max-width: 800px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: white; 
+  background-color: white;
 }
 
 .section-contrast {
@@ -224,6 +253,14 @@ section {
 
   .carousel-controls button {
     padding: 5px 10px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.4em;
+  }
+  
+  .carousel-caption p {
+    font-size: 0.9em;
   }
 
   header.navbar {
@@ -363,20 +400,31 @@ section {
 
 /* Calculator-Specific Styles */
 .calculator-container {
-  max-width: 1200px; /* Increase from 100% to 800px for a wider box */
-  width: 95%;
-  margin: 20px auto;
-  padding: 30px; /* Increase padding for more spacing */
+  width: 90%; /* Reduce from 95% to 90% for a bit more whitespace */
+  max-width: 900px; /* Increased max-width for wider container */
+  margin: 100px auto 50px; /* Increased top margin to prevent header overlap, added bottom margin */
+  padding: 40px; /* Increased padding for more breathing room */
   background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(42, 37, 37, 0.1);
+  border-radius: 15px; /* Slightly larger border radius for a softer look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer, more pronounced shadow */
   text-align: center;
   font-family: Verdana, sans-serif;
-  overflow: auto; /* Prevent content cutoff */
-  height: auto; /* Allow height to grow naturally with content */
-  opacity: 0; /* Start hidden for fade-in effect */
-  transform: translateY(20px); /* Start slightly off-screen */
+  position: relative; /* For potential absolute positioning of elements */
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.calculator-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(to right, #0ba78d, #008c9e);
+  border-radius: 10px;
 }
 
 .calculator-container h1 {
