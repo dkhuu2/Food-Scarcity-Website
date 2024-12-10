@@ -47,7 +47,7 @@ header.navbar {
 nav {
   display: flex;
   align-items: center;
-  z-index: 1001;
+  z-index: 10000;
 }
 
 .nav-links {
@@ -87,7 +87,7 @@ footer {
   bottom: 0;
   width: 100vw;
   left: 0;
-  z-index: 1001;
+  z-index: 10000;
 }
 
 footer p {
@@ -400,31 +400,16 @@ section {
 
 /* Calculator-Specific Styles */
 .calculator-container {
-  width: 90%; /* Reduce from 95% to 90% for a bit more whitespace */
-  max-width: 900px; /* Increased max-width for wider container */
-  margin: 100px auto 50px; /* Increased top margin to prevent header overlap, added bottom margin */
-  padding: 40px; /* Increased padding for more breathing room */
+  max-width: 800px; /* Increase from 100% to 800px for a wider box */
+  margin: 20px auto;
+  padding: 30px; /* Increase padding for more spacing */
   background-color: white;
-  border-radius: 15px; /* Slightly larger border radius for a softer look */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer, more pronounced shadow */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(42, 37, 37, 0.1);
   text-align: center;
   font-family: Verdana, sans-serif;
-  position: relative; /* For potential absolute positioning of elements */
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.calculator-container::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 5px;
-  background: linear-gradient(to right, #0ba78d, #008c9e);
-  border-radius: 10px;
+  overflow: auto; /* Prevent content cutoff */
+  height: auto; /* Allow height to grow naturally with content */
 }
 
 .calculator-container h1 {
