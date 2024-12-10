@@ -363,7 +363,8 @@ section {
 
 /* Calculator-Specific Styles */
 .calculator-container {
-  max-width: 800px; /* Increase from 100% to 800px for a wider box */
+  max-width: 1200px; /* Increase from 100% to 800px for a wider box */
+  width: 95%;
   margin: 20px auto;
   padding: 30px; /* Increase padding for more spacing */
   background-color: white;
@@ -373,6 +374,9 @@ section {
   font-family: Verdana, sans-serif;
   overflow: auto; /* Prevent content cutoff */
   height: auto; /* Allow height to grow naturally with content */
+  opacity: 0; /* Start hidden for fade-in effect */
+  transform: translateY(20px); /* Start slightly off-screen */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .calculator-container h1 {
