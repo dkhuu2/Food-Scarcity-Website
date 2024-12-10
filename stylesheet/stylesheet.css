@@ -408,10 +408,9 @@ section {
 
 /* Calculator-Specific Styles */
 .calculator-container {
-  width: 90%;
-  max-width: 900px; /* Increase from 100% to 800px for a wider box */
-  margin: 100px auto 50px;
-  padding: 40px; /* Increase padding for more spacing */
+  max-width: 800px; /* Increase from 100% to 800px for a wider box */
+  margin: 20px auto;
+  padding: 30px; /* Increase padding for more spacing */
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(42, 37, 37, 0.1);
