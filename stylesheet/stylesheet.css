@@ -38,12 +38,12 @@ p {
 }
 
 .intro-section {
-  background-color: #f4f4f4; /* Soft background color to make it distinct */
+  background-color: white; 
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for emphasis */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
   margin: 0 auto;
-  max-width: 1000px; /* Make it wider but still have a maximum limit */
+  max-width: 1000px; 
 }
 
 .intro-text {
@@ -77,7 +77,7 @@ p {
 /* Styling for the fun facts section */
 .fun-facts {
   max-width: 1200px;
-  width: 95%;
+  width: 92%;
   margin: 0 auto;
   padding: 40px;
   background-color: white; 
