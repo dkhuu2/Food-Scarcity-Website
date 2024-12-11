@@ -107,9 +107,66 @@ footer a:hover {
 
 /* Wrapper for Page Content */
 .main-content {
-  max-width: 800px; 
+  max-width: 1200px; /* Increased from 800px to make sections wider */
   margin: 0 auto;    
   text-align: center;
+  padding: 0 15px; /* Added some side padding for breathing room */
+}
+
+/* Resources Grid Layout */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  height: 100%; /* Ensure cards have equal height */
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resource-card h2 {
+  color: #0ba78d;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0ba78d;
+  padding-bottom: 5px;
+}
+
+.resource-card p {
+  margin: 5px 0;
+}
+
+.resource-card p:last-child {
+  margin-top: auto; /* Push contact info to bottom */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .resources-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Slightly smaller on smaller screens */
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .resource-card {
+    padding: 15px;
+  }
 }
 
 /* Carousel Styles */
