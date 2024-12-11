@@ -27,6 +27,20 @@ p {
   margin-right: 20px; 
 }
 
+/* Styling for ordered list */
+ol {
+  padding-left: 20px; /* Add some left padding to the list */
+}
+
+li {
+  margin-bottom: 15px; /* Add space between each list item */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+li:last-child {
+  margin-bottom: 0; /* Remove extra margin after the last item */
+}
+
 /* Header Styles */
 header.navbar {
   background: linear-gradient(to right, #0ba78d, #008c9e);
@@ -124,7 +138,6 @@ footer a:hover {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   align-items: stretch;
-  min-height: calc(100% + 20px);
 }
 
 .resource-card {
