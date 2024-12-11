@@ -123,6 +123,7 @@ footer a:hover {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: stretch;
 }
 
 .resource-card {
@@ -135,7 +136,6 @@ footer a:hover {
   justify-content: space-between;
   text-align: left;
   height: 100%; /* Ensures it takes up the full height of the container */
-  min-height: 250px; /* Adjust the minimum height to avoid cards hanging outside */
   text-decoration: none; /* Remove underline from links */
   color: inherit; /* Ensure text color is preserved */
 }
