@@ -108,6 +108,7 @@ footer a:hover {
 /* Wrapper for Page Content */
 .main-content {
   max-width: 1200px; /* Increased from 800px to make sections wider */
+  width: 90%;
   margin: 0 auto;    
   text-align: center;
   padding: 0 15px; /* Added some side padding for breathing room */
