@@ -597,7 +597,7 @@ section {
 }
 
 .email-button {
-  position: absolute;
+  position: inline-block; 
   background: linear-gradient(to right, #0ba78d, #008c9e);
   color: white;
   border: none;
@@ -607,15 +607,14 @@ section {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 1000;
   text-decoration: none;
   display: inline-block;
 }
 
 .email-button:hover {
-  transform: translateY(-5px); /* Slight lift effect */
+  transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(to right, #0ba78d, #0ba78d); /* Slight color change on hover */
+  background: linear-gradient(to right, #0ba78d, #0ba78d);
 }
 
 /* Calculator-Specific Styles */
