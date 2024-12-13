@@ -439,7 +439,7 @@ footer a:hover {
 /* Sections */
 section {
   margin: 20px auto;
-  padding: 60px;
+  padding: 90px;
   max-width: 1200px;
   width: 90%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -596,7 +596,7 @@ section {
   background: linear-gradient(to right, #0ba78d, #0ba78d); 
 }
 
-.email-button {
+.adaptive-button {
   position: inline-block; 
   background: linear-gradient(to right, #0ba78d, #008c9e);
   color: white;
@@ -611,7 +611,7 @@ section {
   display: inline-block;
 }
 
-.email-button:hover {
+.adaptive-button:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to right, #0ba78d, #0ba78d);
