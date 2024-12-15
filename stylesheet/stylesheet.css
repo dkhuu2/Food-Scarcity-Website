@@ -491,7 +491,7 @@ section {
   width: 80%;  
   min-height: 40vh; 
   padding: 30px; 
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 30px;
 }
 
@@ -512,7 +512,7 @@ section {
 }
 
 .gallery-item img {
-  width: 90%; 
+  width: 80%; 
   height: auto; 
   object-fit: contain;
   max-width: 100%;
